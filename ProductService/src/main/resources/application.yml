@@ -1,0 +1,26 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+    registerWithEureka: true
+    fetchRegistry: true  
+instance:
+    hostname: localhost      
+      
+server:
+  port: 8089
+spring:
+  application:
+    name: Product-Service
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: Amresh@1234
+    url: jdbc:mysql://10.10.10.236/madhurisowmya
+    username: amresh
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect  
+    show-sql: false
